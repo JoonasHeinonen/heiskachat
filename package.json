@@ -1,0 +1,36 @@
+{
+  "name": "heiskachat",
+  "version": "1.0.0",
+  "description": "Chat application implemented with Socket.io.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoonasHeinonen/heiskachat.git"
+  },
+  "keywords": [
+    "chat",
+    "messaging",
+    "sockets",
+    "web"
+  ],
+  "author": "Joonas Heinonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoonasHeinonen/heiskachat/issues"
+  },
+  "homepage": "https://github.com/JoonasHeinonen/heiskachat#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "http": "0.0.1-security",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.9",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "socket.io": "^3.0.4"
+  }
+}
