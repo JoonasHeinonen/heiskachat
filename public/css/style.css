@@ -4,23 +4,56 @@
     box-sizing: border-box; 
 }
 
-body { 
-    font: 13px Helvetica, Arial; 
+body {
+    font-family: 'Open Sans', sans-serif;
+    font: 10px;
+    background-color:rgb(60, 60, 60);
 }
 
-.login {
+#nav {
+    background: rgb(36, 36, 36);
+    padding-bottom: 0.5em;
+}
+
+.login, .login h2, .nav-horizontal-align   {
+    text-align: center;
+}
+
+.nav-horizontal-align a {
+    margin: 0.5em;
+    text-decoration: none;
+}
+
+.user-card {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+.login h2, #nav h1, .nav-horizontal-align a {
+    color:white;
     text-align: center;
 }
 
 .form-login {
-    margin: 0 auto;
+    background-color:rgb(36, 36, 36);
+    color: rgb(150, 150, 150);
+    margin: 1em auto;
     padding: 1em;
-    border: 1px solid black;
-    width: 30em;
+    border: 3px solid rgb(150, 150, 150);
+    width: 26em;
 }
 
-.form-login * {
-    margin: 0.2em;
+
+
+.form-login input {
+    border: none;
+    outline: none;
+    color: rgb(150, 150, 150);
+    background-color: rgb(36, 36, 36);
+    border-bottom: 2px solid rgb(150, 150, 150);
+    margin: 1em;
+    font-size: 1em;
 }
 
 label {
@@ -28,7 +61,7 @@ label {
 }
 
 #form-chat { 
-    background: #000; 
+    background: rgb(36, 36, 36);
     padding: 3px; 
     position: fixed; 
     bottom: 0; 
@@ -40,25 +73,52 @@ label {
     padding: 10px; 
     width: 90%; 
     margin-right: 0.5%; 
+    outline: none;
+    background:rgb(50, 50, 50);
+    color: white;
+    border-radius: 8px;
 }
     
 #form-chat button { 
     width: 9%; 
-    background: rgb(130, 224, 255); 
+    background: rgb(30, 200, 30); 
+    color: white;
     border: none; 
     padding: 10px; 
+    border-radius: 25px;
+}
+
+button {
+    border: none;
+    padding: 0.5em 1em;
+    min-width: 5em;
+    min-height: 3em;
+    outline: none;
+    transition: 0.2s;
+    color:  rgb(150, 150, 150);
+    background-color:rgb(36, 36, 36);
+    border: 2px solid rgb(150, 150, 150);
+}
+
+button:hover {
+    padding: 0.5em 1em;
+    transition: 0.2s;
+    cursor: pointer;
 }
     
 #messages { 
     list-style-type: none; 
     margin: 0; 
     padding: 0; 
+    color:white;
 }
     
 #messages li { 
     padding: 5px 10px; 
+    border-top: 1px solid rgb(80, 80, 80);
+    color:white;
 }
     
-#messages li:nth-child(odd) { 
-    background: #eee; 
+#messages li:hover { 
+    background: rgb(50, 50, 50);
 }

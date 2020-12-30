@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Schema = mongoose();
+const Schema = mongoose.Schema;
 
 var userSchema = new Schema({
     username: {
@@ -16,6 +16,11 @@ var userSchema = new Schema({
         lowercase: true,
         unique: true
     },
+});
+
+userSchema.pre('save', function(next) {
+    let user = this;
+    next();
 });
 
 module.exports = mongoose.model("User", userSchema)

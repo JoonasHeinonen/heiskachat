@@ -1,23 +1,18 @@
 <head>
-    <title>Socket.IO chat - Sign Up</title>
+    <title>HeiskaChat - Sign Up</title>
   </head>
   <body>
     <div class="login">
-        <form class="form-login" action="">
-            <h2>Sign Up</h2>
+        <form class="form-login" action="/users/create">
+            <h2>SIGN UP</h2>
             <br />
             <p>Login to your account.</p>
-            <label for="username">Username</label><br />
-            <input id="username" autocomplete="off" /><br />
-            <label for="email">Email</label><br />
-            <input id="email" type="email" autocomplete="off" /><br />
-            <label for="password">Password</label><br />
-            <input id="password" type="password" autocomplete="off" /><br />
-            <label for="confirm-password">Confirm password</label><br />
-            <input id="confirm-password" type="password" autocomplete="off" /><br />
-            <button>Login</button>
+            <input id="username" placeholder="username" autocomplete="off" /><br />
+            <input id="email" placeholder="email" type="email" autocomplete="off" /><br />
+            <input id="password" placeholder="password" type="password" autocomplete="off" /><br />
+            <button>Sign Up</button>
             <br /><br /><p>Already have an account?</p>
-            <a href="/login">Login</a>
+            <a href="/users/login">Login</a>
         </form>
     </div>
   </body>

@@ -5,8 +5,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="nav">
+            <div class="nav-id">
+                <h1 id="title">HeiskaChat</h1>
+            </div>
+            <div class="nav-horizontal-align">
+                <a href="/">
+                    <span class="button">Chat</span>
+                </a>
+                <a href="/users/login">
+                    <span class="button">Login</span>
+                </a>
+                <a href="/users/signup">
+                    <span class="button">Sign Up</span>
+                </a>
+            </div>
+        </div>
+        <div class="flashes">
+            
+        </div>           
         <div class="container">
             <%- body %>
         </div>
